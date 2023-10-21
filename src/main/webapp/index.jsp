@@ -51,6 +51,18 @@
 				<td><fmt:message key="r1Label"> </fmt:message></td>
 				<td>DAT152</td>
 			</tr>
+			<tr>
+				<td><fmt:message key="r2Label"></fmt:message></td>
+				<td><fmt:message key="title"></fmt:message></td>
+			</tr>
+			<tr>
+				<td> <fmt:message key="r3Label"></fmt:message></td>
+				<td> <fmt:message key="month"></fmt:message></td>
+			</tr>
+			<tr>
+             <td> <fmt:message key="r4Label"></fmt:message> </td>
+				<td> <fmt:message key="lecturers"></fmt:message></td>
+			</tr>
 		</table>
 
 
