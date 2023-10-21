@@ -8,6 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri = "http://java.sun.com/jsp/jstl/fmt" prefix = "fmt" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="myTags" tagdir="/WEB-INF/tags" %>
 <html>
 <head>
     <title>Course Description</title>
@@ -22,10 +23,15 @@
     </c:otherwise>
 </c:choose>
 
+
 <fmt:setBundle basename="no.hvl.dat152.i18n.LocalMessages"></fmt:setBundle>
 <a href="${pageContext.request.contextPath}/">Home</a>
 <h2>Course Description Page</h2>
 <a href="courseDescription.jsp?locale=no_NO">No</a> | <a href="courseDescription.jsp?locale=en_EN">En</a>
-<p> <fmt:message key="DAT152Description"></fmt:message></p>
+<myTags:styleText borderColor="red" borderSize="2" width="400">
+    <p> <fmt:message key="DAT152Description" ></fmt:message></p>
+</myTags:styleText>
+
+
 </body>
 </html>
