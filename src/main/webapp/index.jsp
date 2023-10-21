@@ -31,7 +31,7 @@
 
 <h1>DAT152 <fmt:message key="title"></fmt:message> </h1>
 	<div style="width:550px; word-wrap: break-word;">
-		<a href="index.jsp?locale=no_NO">No</a>	<a href="index.jsp?locale=en_EN">En</a>
+		<a href="index.jsp?locale=no_NO">No</a> |	<a href="index.jsp?locale=en_EN">En</a>
 
 		<p>
 			<strong>
@@ -62,6 +62,37 @@
 			<tr>
              <td> <fmt:message key="r4Label"></fmt:message> </td>
 				<td> <fmt:message key="lecturers"></fmt:message></td>
+			</tr>
+		</table>
+
+		<a href="${pageContext.request.contextPath}/courseDescription.jsp"> <fmt:message key="courseDescriptionLink"></fmt:message></a>
+
+		<h2> DAT152 <fmt:message key="h2"></fmt:message></h2>
+
+		<table>
+
+			<tr>
+				<td><fmt:message key="table2DateLabel"></fmt:message>
+					<fmt:parseDate value="11/12/2023" pattern="MM/dd/yyyy" var="parsedDate"></fmt:parseDate>
+					<fmt:formatDate value="${parsedDate}" type="date" dateStyle="short"></fmt:formatDate> </td>
+
+			</tr>
+			<tr>
+				<td><fmt:message key="table2DurationLabel"></fmt:message> <fmt:message key="timeDuration"></fmt:message></td>
+
+			</tr>
+			<tr>
+				<td> <fmt:message key="table2TypeLabel"></fmt:message> <fmt:message key="examType"></fmt:message> </td>
+
+			</tr>
+			<tr>
+				<td> <fmt:message key="table2PassMarkLabel"></fmt:message> <fmt:message key="examPassMark">
+					<fmt:param>
+						<fmt:formatNumber value="0.399" type="percent" maxIntegerDigits="2" minFractionDigits="1"></fmt:formatNumber>
+					</fmt:param>
+				</fmt:message>
+				</td>
+
 			</tr>
 		</table>
 
